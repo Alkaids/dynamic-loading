@@ -1,0 +1,43 @@
+{
+  "name": "dynamic-loading",
+  "version": "0.0.1",
+  "description": "loading component for umi-dynamic-loading",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "authors": {
+    "name": "jinxin0112",
+    "email": "m18508218948@163.com"
+  },
+  "repository": "git@github.com:Alkaids/dynamic-loading.git",
+  "scripts": {
+    "dev": "umi-lib doc dev",
+    "build": "umi-lib build"
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "umi-library": "^1.1.1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "antd": "^3.16.2",
+    "babel-plugin-import": "^1.11.0",
+    "docz": "^0.13.7"
+  },
+  "files": [
+    "dist"
+  ],
+  "babel": {
+    "plugins": [
+      [
+        "import",
+        {
+          "libraryName": "antd",
+          "libraryDirectory": "es",
+          "style": "css"
+        }
+      ]
+    ]
+  }
+}
